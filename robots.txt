@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /assets
+Disallow: /huang.bib
+Allow: /assets/images/profile*
+
+Sitemap: https://www.weiranhuang.com/sitemap.xml
