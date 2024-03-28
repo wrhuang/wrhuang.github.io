@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/assets/css/jemdoc.css" type="text/css">
+<title>Weiran Huang - Shanghai Jiao Tong University</title>
+<meta name="description" content="Weiran Huang is an associate professor in Qing Yuan Research Institute at Shanghai Jiao Tong University, working on data-efficient machine learning algorithms and applications.">
+<link rel="canonical" href="https://www.weiranhuang.com/">
+<meta property="og:title" content="Weiran Huang - Shanghai Jiao Tong University">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.weiranhuang.com">
+<meta property="og:image" content="https://www.weiranhuang.com/assets/images/profile.jpg">
+<meta property="og:description" content="Weiran Huang is an associate professor at Shanghai Jiao Tong University, working on data-efficient machine learning algorithms and applications.">
+<meta name="google-site-verification" content="ePkNUg8s4WWizOmNEvVczaKskcxYnDKN1EYjEcO8_yU">
+<meta name="baidu-site-verification" content="jKCy9Nth8R">
+<meta name="msvalidate.01" content="A94A2C16A7691A80D0930C04C0C600E8">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg?v=2">
+<link rel="icon" type="image/png" href="/assets/favicon/favicon.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?v=2">
+<link rel="manifest" href="/assets/favicon/site.webmanifest">
+<link id="favicon" rel="icon" href="/favicon.ico?v=2">
+<link rel="shortcut icon" href="/favicon.ico?v=2">
+<script>
+	// viewport 调整
+    const WIDTH = 600
+    const mobileAdapter = () => {
+      let scale = screen.width/WIDTH
+	  let content = ``
+	  if (scale > 1) {
+		scale = 1
+		content = `width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=1`
+	  }
+	  else {
+		content = `width=${WIDTH}, initial-scale=${scale}, maximum-scale=1.5, minimum-scale=${scale}`
+	  }
+      let meta = document.querySelector('meta[name=viewport]')
+      if(!meta) {
+        meta = document.createElement('meta')
+        meta.setAttribute('name', 'viewport')
+        document.head.appendChild(meta)
+      }
+      meta.setAttribute('content', content)
+    }
+    mobileAdapter()
+    window.onorientationchange = mobileAdapter
+</script>
+<script>
+	// 禁止微信字体缩放
+	(function() {
+	if (
+		typeof WeixinJSBridge == 'object' &&
+		typeof WeixinJSBridge.invoke == 'function'
+	) {
+		handleFontSize();
+	} else {
+		if (document.addEventListener) {
+		document.addEventListener('WeixinJSBridgeReady', handleFontSize, false);
+		} else if (document.attachEvent) {
+		document.attachEvent('WeixinJSBridgeReady', handleFontSize);
+		document.attachEvent('onWeixinJSBridgeReady', handleFontSize);
+		}
+	}
+	function handleFontSize() {
+		// 设置网页字体为默认大小
+		WeixinJSBridge.invoke('setFontSizeCallback', { fontSize: 0 });
+		// 重写设置网页字体大小的事件
+		WeixinJSBridge.on('menu:setfont', function() {
+		WeixinJSBridge.invoke('setFontSizeCallback', { fontSize: 0 });
+		});
+	}
+	})();
+</script>
+<script>
+	host = window.location.host;
+	if (host == "weiranhuang.com")
+	{
+		var Url001 = window.location.href;
+		var arrUrl = Url001.split("//");
+		var start = arrUrl[1].indexOf("/");
+		var relUrl = arrUrl[1].substring(start);
+		window.location.href ="https://www.weiranhuang.com"+relUrl;
+	}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Person",
+  "name": "Weiran Huang",
+  "additionalName": "黄维然",
+  "url": "https://www.weiranhuang.com",
+  "image": "https://www.weiranhuang.com/assets/images/profile.jpg",
+  "sameAs": [
+    "https://twitter.com/WeiranHuang",
+    "https://scholar.google.com/citations?user=AjJ2rf8AAAAJ&hl=en",
+    "https://dblp.org/pid/170/0073-1",
+    "https://www.zhihu.com/people/huangweiran",
+    "https://github.com/weiran-huang",
+	"https://openreview.net/profile?id=~Weiran_Huang1",
+	"https://www.semanticscholar.org/author/Weiran-Huang/8007867",
+	"https://iiis.tsinghua.edu.cn/zh/huangwr/",
+	"https://iiis.tsinghua.edu.cn/en/huangwr/",
+	"https://orcid.org/0000-0003-1193-6157"
+  ],
+  "jobTitle": "Associate Professor",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Shanghai Jiao Tong University"
+  }
+}
+</script>
+</head>
+<body>
+<table id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Weiran Huang</div>
+<div class="menu-item"><a href="./" class="current">Home</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+<div class="menu-item"><a href="group.html">Group</a></div>
+<div class="menu-item"><a href="https://huanglab.feishu.cn/docx/T11adQglboDFCaxXDuvcRqnpnQg" target="_blank">Recruitment</a></div>
+<div class="menu-category">Links</div>
+<div class="menu-item"><a href="conf_ddl.html">Conf&nbsp;Deadlines</a></div>
+<div class="menu-item"><a href="http://www.fai-seminar.ac.cn" target="_blank">FAI&nbsp;Seminar</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Weiran Huang</h1>
+</div>
+<table class="imgtable">
+<tr>
+    <td><img style="border-radius: 50%;" src="assets/images/profile.jpg" alt="Weiran Huang's Profile" width="150" height="150">&nbsp;</td>
+    <td align="left">
+        <p style="line-height:1.4;">Weiran Huang (<span class="cn">黄维然</span>)<br>
+        Associate Professor<br>
+        Qing Yuan Research Institute<br>
+        Shanghai Jiao Tong University<br>
+        <contact data-user="weiran.huang" data-domain="sjtu.edu.cn"></contact><br>
+        [<a href="https://scholar.google.com/citations?user=AjJ2rf8AAAAJ&amp;hl=en" target="_blank" rel="nofollow">Google Scholar</a>] / [<a href="https://dblp.org/pid/170/0073-1" target="_blank" rel="nofollow">DBLP</a>] / [<a href="https://www.zhihu.com/column/notes-for-ai" target="_blank" rel="nofollow"><span class="cn">知乎专栏</span></a>] / [<a href="talk_bio.html">Talk Bio</a>]
+        </p>
+    </td>
+</tr>
+</table>
+<h2>About Me</h2>
+<p>I am an associate professor at <a href="http://www.qingyuan.sjtu.edu.cn/en" target="_blank" rel="nofollow">Qing Yuan Research Institute</a> of Shanghai Jiao Tong University, working on data-efficient machine learning algorithms and their applications. 
+
+I earned my PhD in computer science from <a href="https://iiis.tsinghua.edu.cn/en/" target="_blank" rel="nofollow">Institute for Interdisciplinary Information Sciences</a> of Tsinghua University, where I had the honor of being supervised by Turing Award Laureate Prof.&nbsp;<a href="https://iiis.tsinghua.edu.cn/en/yao/" target="_blank" rel="nofollow">Andrew Yao</a> and IEEE Fellow Prof.&nbsp;<a href="https://www.microsoft.com/en-us/research/people/weic/" target="_blank" rel="nofollow">Wei Chen</a>.
+Prior to that, I received my bachelor's degree in <a href="http://www.ee.tsinghua.edu.cn/en/index.htm" target="_blank" rel="nofollow">Electronic Engineering</a> from Tsinghua University.
+Additionally, I was a visiting scholar hosted by Prof.&nbsp;<a href="https://people.seas.harvard.edu/~yaron/" target="_blank" rel="nofollow">Yaron Singer</a> at <a href="https://www.seas.harvard.edu/" target="_blank" rel="nofollow">Harvard SEAS</a>.
+</p>
+<p>My research interests are broadly in
+</p>
+<ul>
+<li><p><b>Machine Learning Theory:</b> This area investigates the foundational principles of machine learning, such as network capacity, optimization methods, and generalization ability. The focus is on deriving insights that can inform and improve algorithm design.
+</p>
+</li>
+<li><p><b>Self-Supervised Learning:</b> This field aims to pre-train a powerful feature extractor through a self-supervised task using a large amount of unlabeled data, such that the learned data representations can be efficiently adapted to downstream tasks.
+</p>
+</li>
+<li><p><b>Few-Shot Learning:</b> This branch deals with the challenge of making precise predictions in new tasks with a limited number of supervised examples. It emphasizes knowledge transfer to novel tasks with minimal data.
+</p>
+</li>
+<li><p><b>Multimodal Learning:</b> This area is concerned with the integration and alignment of various data modalities. The primary challenges are aligning different modalities, fusing them for prediction tasks, and conducting joint training to enable knowledge transfer between modalities and their representations.
+</p>
+</li>
+<li><p><b>Continual Learning:</b> This topic explores methods for updating models to stay current, especially focusing on large multimodal models, with a minimal training cost. The goal is to develop strategies that allow models to learn continuously and adapt efficiently to new information.
+</p>
+</li>
+</ul>
+<div class="infoblock">
+<div class="blocktitle">Students / Interns / Postdocs (招生)</div>
+<div class="blockcontent">
+<p>I am actively seeking self-motivated graduate students, as well as interns and postdocs, who are interested in joining our lab. 
+</p>
+<p>If you're interested, please email me your CV. Before reaching out, please <b>carefully read</b> our latest <a href="https://huanglab.feishu.cn/docx/T11adQglboDFCaxXDuvcRqnpnQg" target="_blank" rel="nofollow">guidelines (<span class="cn">招生须知</span>)</a>.
+</p>
+</div></div>
+<h2>Latest News</h2>
+<ul>
+<li><p>Dec 2023: Our team achieved <span style="color:#E55B5B;">first place</span> in the &ldquo;<a href="https://medfm2023.grand-challenge.org/evaluation/challenge-evaluation-results-submission-only/leaderboard/" target="_blank" rel="nofollow">Foundation Model Prompting for Medical Image Classification Challenge 2023</a>&rdquo; at the NeurIPS 2023 Competition!
+</p>
+</li>
+<li><p>Oct 2023: Our paper &ldquo;<a href="https://arxiv.org/pdf/2211.10955" target="_blank" rel="nofollow">When Noisy Labels Meet Long Tail Dilemmas: A Representation Calibration Method</a>&rdquo; was among the <span style="color:#E55B5B;"><b>ICCV 2023 Best Paper Finalists</b></span>!
+</p>
+</li>
+<li><p>Sep 2023: Our paper &ldquo;<a href="https://arxiv.org/pdf/2307.15317" target="_blank" rel="nofollow">DiffKendall: A Novel Approach for Few-Shot Learning with Differentiable Kendall's Rank Correlation</a>&rdquo; has been accepted by <span style="color:#E55B5B;">NeurIPS 2023</span>!
+</p>
+</li>
+<li><p>Sep 2023: Our paper &ldquo;<a href="https://arxiv.org/pdf/2310.15105" target="_blank" rel="nofollow">FD-Align: Feature Discrimination Alignment for Fine-tuning Pre-Trained Models in Few-Shot Learning</a>&rdquo; has been accepted by <span style="color:#E55B5B;">NeurIPS 2023</span>!
+</p>
+</li>
+<li><p>Sep 2023: I am honored to be selected as one of the 26 recipients of <a href="https://news.sjtu.edu.cn/zhxw/20230915/188163.html" target="_blank" rel="nofollow">2023 CCF-Baidu Open Fund</a>!
+</p>
+</li>
+<li><p>Aug 2023: Our paper &ldquo;<a href="https://arxiv.org/pdf/2308.12067" target="_blank" rel="nofollow">InstructionGPT-4: A 200-Instruction Paradigm for Fine-Tuning MiniGPT-4</a>&rdquo; has been covered by AI media <a href="https://mp.weixin.qq.com/s/s4Acec71v5oMlFkyhlCL_g" target="_blank" rel="nofollow">Jiqi Zhixin</a> (<span class="cn">机器之心</span>)!
+</p>
+</li>
+<li><p>Jul 2023: Our paper &ldquo;<a href="https://arxiv.org/pdf/2211.10955" target="_blank" rel="nofollow">When Noisy Labels Meet Long Tail Dilemmas: A Representation Calibration Method</a>&rdquo; has been accepted by <span style="color:#E55B5B;">ICCV 2023</span> as an <span style="color:#E55B5B;">oral presentation</span>!
+</p>
+</li>
+<li><p>Apr 2023: Our paper &ldquo;<a href="https://arxiv.org/pdf/2306.04160" target="_blank" rel="nofollow">Rethinking Weak Supervision in Helping Contrastive Representation Learning</a>&rdquo; has been accepted by <span style="color:#E55B5B;">ICML 2023</span>!
+</p>
+</li>
+<li><p>Jan 2023: Our paper &ldquo;<a href="https://arxiv.org/pdf/2111.00743" target="_blank" rel="nofollow">Towards the Generalization of Contrastive Self-Supervised Learning</a>&rdquo; has been accepted by <span style="color:#E55B5B;">ICLR 2023</span>!
+</p>
+</li>
+<li><p>Jan 2023: Our paper &ldquo;<a href="https://arxiv.org/pdf/2303.0109" target="_blank" rel="nofollow">ArCL: Enhancing Contrastive Learning with Augmentation-Robust Representations</a>&rdquo; has been accepted by <span style="color:#E55B5B;">ICLR 2023</span>!
+</p>
+</li>
+<li><p>Jan 2023: Our paper &ldquo;<a href="https://arxiv.org/pdf/2205.14814" target="_blank" rel="nofollow">Your Contrastive Learning Is Secretly Doing Stochastic Neighbor Embedding</a>&rdquo; has been accepted by <span style="color:#E55B5B;">ICLR 2023</span>!
+</p>
+</li>
+<li><p>Dec 2022: I am excited to join the faculty at Shanghai Jiao Tong University as an Associate Professor!
+</p>
+</li>
+</ul>
+<h2>Education &amp; Work Experience</h2>
+<ul>
+<li><p><span style="font-size: 95%; font-family: monaco, monospace;">2012&ndash;2018</span>: PhD in Computer Science, Tsinghua University (Advisor: <a href="https://iiis.tsinghua.edu.cn/en/yao/" target="_blank" rel="nofollow">Andrew Yao</a>)
+</p>
+</li>
+<li><p><span style="font-size: 95%; font-family: monaco, monospace;">2009&ndash;2012</span>: BSc in Electronic Engineering, Tsinghua University
+</p>
+</li>
+<li><p><span style="font-size: 95%; font-family: monaco, monospace;">2008&ndash;2009</span>: Fundamental Science Class (<span class="cn">数理基科班</span>), Tsinghua University
+</p>
+</li>
+</ul>
+<ul>
+<li><p><span style="font-size: 95%; font-family: monaco, monospace;">2022/12&ndash;Present</span>: Associate Professor at Shanghai Jiao Tong University
+</p>
+</li>
+<li><p><span style="font-size: 95%; font-family: monaco, monospace;">2018/07&ndash;2022/11</span>: Research Scientist at Huawei Noah's Ark Lab (Director: <a href="https://openreview.net/profile?id=~Jun_Yao2" target="_blank" rel="nofollow">Jun Yao</a>)
+</p>
+</li>
+<li><p><span style="font-size: 95%; font-family: monaco, monospace;">2018/03&ndash;2018/06</span>: Research Intern at Microsoft Research Asia (Mentor: <a href="https://www.microsoft.com/en-us/research/people/weic/" target="_blank" rel="nofollow">Wei Chen</a>)
+</p>
+</li>
+<li><p><span style="font-size: 95%; font-family: monaco, monospace;">2017/11&ndash;2018/02</span>: Visiting Scholar at Harvard University (Advisor: <a href="https://people.seas.harvard.edu/~yaron/" target="_blank" rel="nofollow">Yaron Singer</a>)
+</p>
+</li>
+<li><p><span style="font-size: 95%; font-family: monaco, monospace;">2015/08&ndash;2017/10</span>: Research Intern at Microsoft Research Asia (Mentor: <a href="https://www.microsoft.com/en-us/research/people/weic/" target="_blank" rel="nofollow">Wei Chen</a>)
+</p>
+</li>
+</ul>
+<h2>Awards &amp; Honors</h2>
+<ul>
+<li><p>Champion, <a href="https://medfm2023.grand-challenge.org/evaluation/challenge-evaluation-results-submission-only/leaderboard/" target="_blank" rel="nofollow">Foundation Model Prompting for Medical Image Classification Challenge 2023</a>, NeurIPS 2023 Competition, 2023.
+</p>
+</li>
+<li><p><a href="https://iccv2023.thecvf.com/iccv2023.opening.slides-38--MTI.php" target="_blank" rel="nofollow">ICCV 2023 Best Paper Finalist</a> for &ldquo;When Noisy Labels Meet Long Tail Dilemmas: A Representation Calibration Method&rdquo;, 2023.
+</p>
+</li>
+<li><p><a href="awards/innovation_pioneer.png" target="_blank">Huawei Innovation Pioneer (1st Prize)</a>, 2020.
+</p>
+</li>
+<li><p><a href="https://mp.weixin.qq.com/s/aSPc47Bn5JwGMDUvWFmiVQ" target="_blank" rel="nofollow">Excellence in the Microsoft Research Asia Internship Program</a>, 2018.
+</p>
+</li>
+<li><p><a href="https://iiis.tsinghua.edu.cn/show-7117-1.html" target="_blank" rel="nofollow">Outstanding Graduate Student</a>, 2018.
+</p>
+</li>
+<li><p>Gold medal in the 24th Chinese Physics Olympiad (CPhO), Member of National Training Team (<span class="cn">国家集训队</span>, 31 people in China), 2007.
+</p>
+</li>
+</ul>
+<h2>Services</h2>
+<ul>
+<li><p><b>Reviewer:</b> ICML (2022-2024), NeurIPS (2019-2023), ICLR (2022-2024).
+</p>
+</li>
+</ul>
+<h2>Sponsors</h2>
+<p>We are deeply grateful to the following sponsors for their generous support of our research, listed in no particular order.
+</p>
+<p><img src="assets/images/msra.png" alt="Microsoft Research Asia" height="80"><img src="assets/images/baidu.png" alt="Baidu" height="80"></p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2024-01-07.
+<a href="/sitemap.xml" target="_blank">Site Map</a>.
+<a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow"><span class="cn">沪</span>ICP<span class="cn">备</span>20020427<span class="cn">号</span>-1</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<!-- 百度统计 -->
+<script>
+	var _hmt = _hmt || [];
+	(function () {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?3af8fb76fc9f2ca7fe57cf333ceb3341";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+<!-- microsoft clarity -->
+<script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "f8sbyee5cu");
+</script>
+<!-- mathjax config begin
+<script>
+	MathJax = {
+		tex: {
+			inlineMath: [['$', '$'], ['\\(', '\\)']]
+		}
+	};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+ mathjax config end-->
+</body>
+</html>

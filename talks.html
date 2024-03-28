@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/assets/css/jemdoc.css" type="text/css">
+<title>Talks - Weiran Huang</title>
+<link rel="canonical" href="https://www.weiranhuang.com/talks.html">
+<meta name="google-site-verification" content="ePkNUg8s4WWizOmNEvVczaKskcxYnDKN1EYjEcO8_yU">
+<meta name="baidu-site-verification" content="jKCy9Nth8R">
+<meta name="msvalidate.01" content="A94A2C16A7691A80D0930C04C0C600E8">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg?v=2">
+<link rel="icon" type="image/png" href="/assets/favicon/favicon.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?v=2">
+<link rel="manifest" href="/assets/favicon/site.webmanifest">
+<link id="favicon" rel="icon" href="/favicon.ico?v=2">
+<link rel="shortcut icon" href="/favicon.ico?v=2">
+<script>
+	// viewport 调整
+    const WIDTH = 600
+    const mobileAdapter = () => {
+      let scale = screen.width/WIDTH
+	  let content = ``
+	  if (scale > 1) {
+		scale = 1
+		content = `width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=1`
+	  }
+	  else {
+		content = `width=${WIDTH}, initial-scale=${scale}, maximum-scale=1.5, minimum-scale=${scale}`
+	  }
+      let meta = document.querySelector('meta[name=viewport]')
+      if(!meta) {
+        meta = document.createElement('meta')
+        meta.setAttribute('name', 'viewport')
+        document.head.appendChild(meta)
+      }
+      meta.setAttribute('content', content)
+    }
+    mobileAdapter()
+    window.onorientationchange = mobileAdapter
+</script>
+<script>
+	// 禁止微信字体缩放
+	(function() {
+	if (
+		typeof WeixinJSBridge == 'object' &&
+		typeof WeixinJSBridge.invoke == 'function'
+	) {
+		handleFontSize();
+	} else {
+		if (document.addEventListener) {
+		document.addEventListener('WeixinJSBridgeReady', handleFontSize, false);
+		} else if (document.attachEvent) {
+		document.attachEvent('WeixinJSBridgeReady', handleFontSize);
+		document.attachEvent('onWeixinJSBridgeReady', handleFontSize);
+		}
+	}
+	function handleFontSize() {
+		// 设置网页字体为默认大小
+		WeixinJSBridge.invoke('setFontSizeCallback', { fontSize: 0 });
+		// 重写设置网页字体大小的事件
+		WeixinJSBridge.on('menu:setfont', function() {
+		WeixinJSBridge.invoke('setFontSizeCallback', { fontSize: 0 });
+		});
+	}
+	})();
+</script>
+<script>
+	host = window.location.host;
+	if (host == "weiranhuang.com")
+	{
+		var Url001 = window.location.href;
+		var arrUrl = Url001.split("//");
+		var start = arrUrl[1].indexOf("/");
+		var relUrl = arrUrl[1].substring(start);
+		window.location.href ="https://www.weiranhuang.com"+relUrl;
+	}
+</script>
+</head>
+<body>
+<table id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Weiran Huang</div>
+<div class="menu-item"><a href="./">Home</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-item"><a href="talks.html" class="current">Talks</a></div>
+<div class="menu-item"><a href="group.html">Group</a></div>
+<div class="menu-item"><a href="https://huanglab.feishu.cn/docx/T11adQglboDFCaxXDuvcRqnpnQg" target="_blank">Recruitment</a></div>
+<div class="menu-category">Links</div>
+<div class="menu-item"><a href="conf_ddl.html">Conf&nbsp;Deadlines</a></div>
+<div class="menu-item"><a href="http://www.fai-seminar.ac.cn" target="_blank">FAI&nbsp;Seminar</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Talks</h1>
+</div>
+<ul>
+<li><p><b>Data-Efficient Machine Learning: Few-Shot Learning, Self-Supervised Learning, and Large Models.</b>
+</p>
+<ul>
+<li><p>Invited Talk: Qiyuan Lab, Beijing, Aug 2023.
+</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p><b>Theoretical Insights into Self-Supervised Contrastive Learning.</b> [<a href="talks/understandingSSL2023slides.pdf" target="_blank">slides</a>] [<a href="https://www.bilibili.com/video/BV1Lz4y187Uh/" target="_blank" rel="nofollow">video</a>]
+</p>
+<ul>
+<li><p>Invited Talk: <a href="https://mp.weixin.qq.com/s/V3mI_ip8Y20Ex0-AGWHkaQ" target="_blank" rel="nofollow">Data mining and Information Retrieval Laboratory</a>, Guangdong University of Technology, Dec 2023.
+</p>
+</li>
+<li><p>Invited Talk: <a href="https://mp.weixin.qq.com/s/AUZkP1AONCb0OxEADsgEvw" target="_blank" rel="nofollow">Laboratory for Quantum Computation and Theoretical Computer Science</a>, ICT, CAS, Nov 2023.
+</p>
+</li>
+<li><p>Invited Talk: School of Computer Science & Technology, Beijing Institute of Technology, Nov 2023.
+</p>
+</li>
+<li><p>Speaker: <a href="https://mp.weixin.qq.com/s/APF35EiQAJy4ZMp7Qb__ag" target="_blank" rel="nofollow">&ldquo;Qingyuan·Science&rdquo; Lecture Series</a>, Shanghai Jiao Tong University, May 2023. 
+</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p><b>Self-Supervised Learning Theory.</b> [<a href="talks/SSLTheory2022slides.pdf" target="_blank">slides</a>] [<a href="https://www.bilibili.com/video/BV1JS4y1S76g/" target="_blank" rel="nofollow">video</a>]
+</p>
+<ul>
+<li><p>Speaker: <a href="https://www.tsinghua.org.cn/info/1015/37128.htm" target="_blank" rel="nofollow">Alumni Forum of IIIS</a>, Tsinghua University, Mar 2022. 
+</p>
+</li>
+<li><p>Speaker: <a href="https://bda.pku.edu.cn/xwzx/240735.htm" target="_blank" rel="nofollow">National Engineering Laboratory for Big Data Analysis and Applications</a>, Peking University, Mar 2022.
+</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p><b>The Generalization of Contrastive Self-Supervised Learning.</b> [<a href="talks/contrastive2021slides.pdf" target="_blank">slides</a>]
+</p>
+<ul>
+<li><p>Invited Talk: Wangxuan Institute of Computer Technology, Peking University, Dec 2021.
+</p>
+</li>
+<li><p>Invited Talk: Kuaishou Technology, Dec 2021.
+</p>
+</li>
+<li><p>Invited Talk: Gaoling School of Artificial Intelligence, Renmin University of China, Dec 2021.
+</p>
+</li>
+<li><p>Invited Talk: Huawei Theoretical Computer Science Lab, Dec 2021.
+</p>
+</li>
+<li><p>Invited Talk: <a href="http://tmcc.whu.edu.cn/info/1102/1804.htm" target="_blank" rel="nofollow">National Tianyuan Mathematics Central Center</a>, Wuhan University, Dec 2021.
+</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p><b>Can Pretext-Based Self-Supervised Learning Be Boosted by Downstream Data?</b> [<a href="talks/pretextssl2022slides.pdf" target="_blank">slides</a>] [<a href="https://www.bilibili.com/video/BV1vM4y1M7Eo" target="_blank" rel="nofollow">video</a>]
+</p>
+<ul>
+<li><p>Speaker: <a href="http://tmcc.whu.edu.cn/zxhd/zthyxq.htm?aid=44" target="_blank" rel="nofollow">The 2021 Machine Learning and Scientific Computing Workshop</a>, Wuhan University, Aug 2021.
+</p>
+</li>
+<li><p>Invited Talk: Department of Computer Science &amp; Technology, Nanjing University, Jun 2021.
+</p>
+</li>
+<li><p>Speaker: <a href="https://2021.baai.ac.cn/schedule" target="_blank" rel="nofollow">The 2021 BAAI Conference</a>, Beijing, Jun 2021.
+</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p><b>Panels:</b> 
+</p>
+<ul>
+<li><p>&ldquo;Self-Supervised Learning&rdquo;, <a href="https://2021.baai.ac.cn/schedule" target="_blank" rel="nofollow">The 2021 BAAI Conference</a>, Beijing, Jun 2021. [<a href="https://www.bilibili.com/video/BV1Yv411J7y5" target="_blank" rel="nofollow">video</a>]
+</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2024-01-07.
+<a href="/sitemap.xml" target="_blank">Site Map</a>.
+<a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow"><span class="cn">沪</span>ICP<span class="cn">备</span>20020427<span class="cn">号</span>-1</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<!-- 百度统计 -->
+<script>
+	var _hmt = _hmt || [];
+	(function () {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?3af8fb76fc9f2ca7fe57cf333ceb3341";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+<!-- microsoft clarity -->
+<script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "f8sbyee5cu");
+</script>
+<!-- mathjax config begin
+<script>
+	MathJax = {
+		tex: {
+			inlineMath: [['$', '$'], ['\\(', '\\)']]
+		}
+	};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+ mathjax config end-->
+</body>
+</html>

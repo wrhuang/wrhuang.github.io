@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/assets/css/jemdoc.css" type="text/css">
+<title>Group - Weiran Huang</title>
+<link rel="canonical" href="https://www.weiranhuang.com/group.html">
+<meta name="google-site-verification" content="ePkNUg8s4WWizOmNEvVczaKskcxYnDKN1EYjEcO8_yU">
+<meta name="baidu-site-verification" content="jKCy9Nth8R">
+<meta name="msvalidate.01" content="A94A2C16A7691A80D0930C04C0C600E8">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg?v=2">
+<link rel="icon" type="image/png" href="/assets/favicon/favicon.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?v=2">
+<link rel="manifest" href="/assets/favicon/site.webmanifest">
+<link id="favicon" rel="icon" href="/favicon.ico?v=2">
+<link rel="shortcut icon" href="/favicon.ico?v=2">
+<script>
+	// viewport 调整
+    const WIDTH = 600
+    const mobileAdapter = () => {
+      let scale = screen.width/WIDTH
+	  let content = ``
+	  if (scale > 1) {
+		scale = 1
+		content = `width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=1`
+	  }
+	  else {
+		content = `width=${WIDTH}, initial-scale=${scale}, maximum-scale=1.5, minimum-scale=${scale}`
+	  }
+      let meta = document.querySelector('meta[name=viewport]')
+      if(!meta) {
+        meta = document.createElement('meta')
+        meta.setAttribute('name', 'viewport')
+        document.head.appendChild(meta)
+      }
+      meta.setAttribute('content', content)
+    }
+    mobileAdapter()
+    window.onorientationchange = mobileAdapter
+</script>
+<script>
+	// 禁止微信字体缩放
+	(function() {
+	if (
+		typeof WeixinJSBridge == 'object' &&
+		typeof WeixinJSBridge.invoke == 'function'
+	) {
+		handleFontSize();
+	} else {
+		if (document.addEventListener) {
+		document.addEventListener('WeixinJSBridgeReady', handleFontSize, false);
+		} else if (document.attachEvent) {
+		document.attachEvent('WeixinJSBridgeReady', handleFontSize);
+		document.attachEvent('onWeixinJSBridgeReady', handleFontSize);
+		}
+	}
+	function handleFontSize() {
+		// 设置网页字体为默认大小
+		WeixinJSBridge.invoke('setFontSizeCallback', { fontSize: 0 });
+		// 重写设置网页字体大小的事件
+		WeixinJSBridge.on('menu:setfont', function() {
+		WeixinJSBridge.invoke('setFontSizeCallback', { fontSize: 0 });
+		});
+	}
+	})();
+</script>
+<script>
+	host = window.location.host;
+	if (host == "weiranhuang.com")
+	{
+		var Url001 = window.location.href;
+		var arrUrl = Url001.split("//");
+		var start = arrUrl[1].indexOf("/");
+		var relUrl = arrUrl[1].substring(start);
+		window.location.href ="https://www.weiranhuang.com"+relUrl;
+	}
+</script>
+</head>
+<body>
+<table id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Weiran Huang</div>
+<div class="menu-item"><a href="./">Home</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+<div class="menu-item"><a href="group.html" class="current">Group</a></div>
+<div class="menu-item"><a href="https://huanglab.feishu.cn/docx/T11adQglboDFCaxXDuvcRqnpnQg" target="_blank">Recruitment</a></div>
+<div class="menu-category">Links</div>
+<div class="menu-item"><a href="conf_ddl.html">Conf&nbsp;Deadlines</a></div>
+<div class="menu-item"><a href="http://www.fai-seminar.ac.cn" target="_blank">FAI&nbsp;Seminar</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Group</h1>
+</div>
+<h2>Current Members</h2>
+<p>PhD Students:
+</p>
+<ul>
+<li><p>Haoyuan Gao (PhD Student, 2023&ndash;present)
+</p>
+</li>
+<li><p><a href="https://waltonfuture.github.io/" target="_blank" rel="nofollow">Lai Wei</a> (PhD Student, coming in fall 2024)
+</p>
+</li>
+</ul>
+<p>MS Students:
+</p>
+<ul>
+<li><p><a href="https://dblp.org/pid/234/9773-5.html" target="_blank" rel="nofollow">Zihao Jiang</a> (MS Student, 2022&ndash;present)
+</p>
+</li>
+<li><p><a href="https://scholar.google.com/citations?hl=en&amp;user=vUPLTvoAAAAJ" target="_blank" rel="nofollow">Xiuyuan Chen</a> (MS Student, 2023&ndash;present)
+</p>
+</li>
+<li><p>Wangshu Zhu (MS Student, 2023&ndash;present)
+</p>
+</li>
+</ul>
+<p>Guest Members:
+</p>
+<ul>
+<li><p><a href="https://dblp.org/pid/330/7352.html" target="_blank" rel="nofollow">Kaipeng Zheng</a> (MS @ University of Electronic Science and Technology of China), Research Assistant (2023&ndash;present)<br>
+» NeurIPS 2023 (1st author)
+</p>
+</li>
+<li><p><a href="https://www.sanker.plus/" target="_blank" rel="nofollow">Kun Song</a> (PhD @ University of Science and Technology Beijing), Visitor (2023&ndash;present)<br>
+» NeurIPS 2023 (1st author)
+</p>
+</li>
+</ul>
+<h2>Former Members</h2>
+<p>During the period working at Huawei Noah's Ark Lab (2018&ndash;2022):
+</p>
+<ul>
+<li><p>Manyi Zhang (MS @ Tsinghua University), Intern (2022)<br>
+» ICCV 2023 best paper finalist (1st author)
+</p>
+</li>
+<li><p>Dong Pang (PhD @ Shanghai Jiao Tong University), Intern (2022)
+</p>
+</li>
+<li><p>Zhou Liu (PhD @ Peking University), Intern (2022)<br>
+» Now a researcher @ Huawei
+</p>
+</li>
+<li><p><a href="https://xuyangzhao99.github.io/" target="_blank" rel="nofollow">Xuyang Zhao</a> (PhD @ Peking University), Intern (2021&ndash;2022)<br>
+» Two ICLR 2023 (1st author, shared 1st author), ICCV 2023 best paper finalist (shared 1st author)
+</p>
+</li>
+<li><p><a href="https://scholar.google.com/citations?user=N-rN5JAAAAAJ&amp;hl=en" target="_blank" rel="nofollow">Jingyi Cui</a> (PhD @ Peking University), Visitor (2021&ndash;2022)<br>
+» ICML 2023 (1st author), NeurIPS 2022 workshop (1st author)
+</p>
+</li>
+<li><p><a href="https://yifeiwang77.github.io/" target="_blank" rel="nofollow">Yifei Wang</a> (PhD @ Peking University), Visitor (2021&ndash;2022)<br>
+» ICML 2023 (shared 1st author), two NeurIPS 2022 workshop (shared 1st author, 3rd author)
+</p>
+</li>
+<li><p><a href="https://scholar.google.com/citations?user=nQjREpoAAAAJ&amp;hl=en" target="_blank" rel="nofollow">Tianqi Du</a> (undergrad @ Peking University), Visitor (2021&ndash;2022)<br>
+» ICLR 2023 (shared 1st author), NeurIPS 2022 workshop (1st author), now a PhD @ Peking University
+</p>
+</li>
+<li><p><a href="https://mingyangyi.github.io/" target="_blank" rel="nofollow">Mingyang Yi</a> (PhD @ Chinese Academy of Sciences), Intern (2021)<br>
+» ICLR 2023 (shared 1st author), now a researcher @ Huawei
+</p>
+</li>
+<li><p><a href="https://www.tengjiaye.com/" target="_blank" rel="nofollow">Jiaye Teng</a> (PhD @ Tsinghua University), Visitor (2020&ndash;2021)<br>
+» AISTATS 2022 (1st author)
+</p>
+</li>
+<li><p>Aoxue Li (PhD @ Peking University), Intern (2018&ndash;2020)<br>
+» CVPR 2020 (1st author), ICCV 2019 (1st author), now a researcher @ Huawei
+</p>
+</li>
+<li><p>Shifeng Zhang (PhD @ Tsinghua University), Intern (2019&ndash;2020)<br>
+» Now a researcher @ Huawei
+</p>
+</li>
+<li><p><a href="https://scholar.google.com/citations?user=TipbNkkAAAAJ&amp;hl=en" target="_blank" rel="nofollow">Yihong Chen</a> (MS @ Tsinghua University), Intern (2019)<br>
+» Now a PhD @ University College London
+</p>
+</li>
+<li><p><a href="http://stat.ruc.edu.cn/jxtd/jsdw/sjkxydsjtjx/4d7215d7fc1b4f8e8aea17b5a9b4a869.htm" target="_blank" rel="nofollow">Yue Liu</a> (PhD @ Peking University), Intern (2019)<br>
+» Now a lecturer @ Renmin University of China
+</p>
+</li>
+<li><p><a href="https://scholar.google.com/citations?user=YFJagJ8AAAAJ&amp;hl=en" target="_blank" rel="nofollow">Xingqiu He</a> (PhD @ University of Electronic Science and Technology of China), Intern (2018&ndash;2019)<br>
+» Now a postdoc @ Singapore University of Technology and Design
+</p>
+</li>
+<li><p>Yimin Huang (PhD @ Peking University), Intern (2018&ndash;2019)<br>
+» AAAI 2020 (1st author), now a researcher @ Huawei
+</p>
+</li>
+</ul>
+<h2>Team Photo</h2>
+<p><figure style="text-align: center; max-width: 350px; font-size: smaller;"><p><img src="assets/images/lunch_2023.jpg" width="350"><figcaption>Dec, 2023</figcaption></figure></p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2024-01-07.
+<a href="/sitemap.xml" target="_blank">Site Map</a>.
+<a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow"><span class="cn">沪</span>ICP<span class="cn">备</span>20020427<span class="cn">号</span>-1</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<!-- 百度统计 -->
+<script>
+	var _hmt = _hmt || [];
+	(function () {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?3af8fb76fc9f2ca7fe57cf333ceb3341";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+<!-- microsoft clarity -->
+<script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "f8sbyee5cu");
+</script>
+<!-- mathjax config begin
+<script>
+	MathJax = {
+		tex: {
+			inlineMath: [['$', '$'], ['\\(', '\\)']]
+		}
+	};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+ mathjax config end-->
+</body>
+</html>

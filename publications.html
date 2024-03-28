@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/assets/css/jemdoc.css" type="text/css">
+<title>Publications - Weiran Huang</title>
+<meta name="description" content="My work has been published in top-tier machine learning conferences such as NeurIPS, AISTATS, KDD, CVPR, ICCV, AAAI, IJCAI, etc.">
+<link rel="canonical" href="https://www.weiranhuang.com/publications.html">
+<meta name="google-site-verification" content="ePkNUg8s4WWizOmNEvVczaKskcxYnDKN1EYjEcO8_yU">
+<meta name="baidu-site-verification" content="jKCy9Nth8R">
+<meta name="msvalidate.01" content="A94A2C16A7691A80D0930C04C0C600E8">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg?v=2">
+<link rel="icon" type="image/png" href="/assets/favicon/favicon.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?v=2">
+<link rel="manifest" href="/assets/favicon/site.webmanifest">
+<link id="favicon" rel="icon" href="/favicon.ico?v=2">
+<link rel="shortcut icon" href="/favicon.ico?v=2">
+<script>
+	// viewport 调整
+    const WIDTH = 600
+    const mobileAdapter = () => {
+      let scale = screen.width/WIDTH
+	  let content = ``
+	  if (scale > 1) {
+		scale = 1
+		content = `width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=1`
+	  }
+	  else {
+		content = `width=${WIDTH}, initial-scale=${scale}, maximum-scale=1.5, minimum-scale=${scale}`
+	  }
+      let meta = document.querySelector('meta[name=viewport]')
+      if(!meta) {
+        meta = document.createElement('meta')
+        meta.setAttribute('name', 'viewport')
+        document.head.appendChild(meta)
+      }
+      meta.setAttribute('content', content)
+    }
+    mobileAdapter()
+    window.onorientationchange = mobileAdapter
+</script>
+<script>
+	// 禁止微信字体缩放
+	(function() {
+	if (
+		typeof WeixinJSBridge == 'object' &&
+		typeof WeixinJSBridge.invoke == 'function'
+	) {
+		handleFontSize();
+	} else {
+		if (document.addEventListener) {
+		document.addEventListener('WeixinJSBridgeReady', handleFontSize, false);
+		} else if (document.attachEvent) {
+		document.attachEvent('WeixinJSBridgeReady', handleFontSize);
+		document.attachEvent('onWeixinJSBridgeReady', handleFontSize);
+		}
+	}
+	function handleFontSize() {
+		// 设置网页字体为默认大小
+		WeixinJSBridge.invoke('setFontSizeCallback', { fontSize: 0 });
+		// 重写设置网页字体大小的事件
+		WeixinJSBridge.on('menu:setfont', function() {
+		WeixinJSBridge.invoke('setFontSizeCallback', { fontSize: 0 });
+		});
+	}
+	})();
+</script>
+<script>
+	host = window.location.host;
+	if (host == "weiranhuang.com")
+	{
+		var Url001 = window.location.href;
+		var arrUrl = Url001.split("//");
+		var start = arrUrl[1].indexOf("/");
+		var relUrl = arrUrl[1].substring(start);
+		window.location.href ="https://www.weiranhuang.com"+relUrl;
+	}
+</script>
+</head>
+<body>
+<table id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Weiran Huang</div>
+<div class="menu-item"><a href="./">Home</a></div>
+<div class="menu-item"><a href="publications.html" class="current">Publications</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+<div class="menu-item"><a href="group.html">Group</a></div>
+<div class="menu-item"><a href="https://huanglab.feishu.cn/docx/T11adQglboDFCaxXDuvcRqnpnQg" target="_blank">Recruitment</a></div>
+<div class="menu-category">Links</div>
+<div class="menu-item"><a href="conf_ddl.html">Conf&nbsp;Deadlines</a></div>
+<div class="menu-item"><a href="http://www.fai-seminar.ac.cn" target="_blank">FAI&nbsp;Seminar</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Publications</h1>
+</div>
+<p>*: Equal contribution or alphabetic ordering.<br>
+†: Corresponding author.
+</p>
+<h2>Conference Papers</h2>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/2307.15317" target="_blank" rel="nofollow">DiffKendall: A Novel Approach for Few-Shot Learning with Differentiable Kendall's Rank Correlation.</a><br>
+Kaipeng Zheng, Huishuai Zhang, <b>Weiran Huang</b>†.<br>
+Conference on Neural Information Processing Systems (<tt>NeurIPS</tt>), 2023.<br>
+[<a href="https://github.com/kaipengm2/DiffKendall" target="_blank" rel="nofollow">code</a>] [<a href="https://zhuanlan.zhihu.com/p/671651279" target="_blank" rel="nofollow"><span class="cn">知乎</span></a>]
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/2310.15105" target="_blank" rel="nofollow">FD-Align: Feature Discrimination Alignment for Fine-tuning Pre-Trained Models in Few-Shot Learning.</a><br>
+Kun Song, Huimin Ma†, Bochao Zou, Huishuai Zhang, <b>Weiran Huang</b>†.<br>
+Conference on Neural Information Processing Systems (<tt>NeurIPS</tt>), 2023.<br>
+[<a href="https://github.com/skingorz/FD-Align" target="_blank" rel="nofollow">code</a>] [<a href="https://zhuanlan.zhihu.com/p/663423245" target="_blank" rel="nofollow"><span class="cn">知乎</span></a>]
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/2211.10955" target="_blank" rel="nofollow">When Noisy Labels Meet Long Tail Dilemmas: A Representation Calibration Method.</a> <span style="color:#E55B5B;">(Oral, Top 1.8%)</span><br>
+Manyi Zhang*, Xuyang Zhao*, Jun Yao, Chun Yuan†, <b>Weiran Huang</b>†.<br>
+International Conference on Computer Vision (<tt>ICCV</tt>), 2023.
+<span style="color:#E55B5B;"><b>(Best Paper Finalist, Top 0.2%)</b></span>
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/2306.04160" target="_blank" rel="nofollow">Rethinking Weak Supervision in Helping Contrastive Representation Learning.</a><br>
+Jingyi Cui*, <b>Weiran Huang</b>*, Yifei Wang*, Yisen Wang.<br>
+International Conference on Machine Learning (<tt>ICML</tt>), 2023.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/2111.00743" target="_blank" rel="nofollow">Towards the Generalization of Contrastive Self-Supervised Learning.</a><br>
+<b>Weiran Huang</b>*†, Mingyang Yi*, Xuyang Zhao*, Zihao Jiang.<br>
+International Conference on Learning Representations (<tt>ICLR</tt>), 2023.<br>
+[<a href="https://github.com/huang-research-group/contrastive2021" target="_blank" rel="nofollow">code</a>] [<a href="talks/contrastive2021slides.pdf" target="_blank">slides</a>] [<a href="https://zhuanlan.zhihu.com/p/520511703" target="_blank" rel="nofollow"><span class="cn">知乎</span></a>]
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/2303.01092" target="_blank" rel="nofollow">ArCL: Enhancing Contrastive Learning with Augmentation-Robust Representations.</a><br>
+Xuyang Zhao*, Tianqi Du*, Yisen Wang, Jun Yao, <b>Weiran Huang</b>†.<br>
+International Conference on Learning Representations (<tt>ICLR</tt>), 2023.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/2205.14814" target="_blank" rel="nofollow">Your Contrastive Learning Is Secretly Doing Stochastic Neighbor Embedding.</a><br>
+Tianyang Hu, Zhili Liu, Fengwei Zhou, Wenjia Wang, <b>Weiran Huang</b>†.<br>
+International Conference on Learning Representations (<tt>ICLR</tt>), 2023.<br>
+[<a href="https://github.com/huang-research-group/t-MoCo-v2" target="_blank" rel="nofollow">code</a>]
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="publications/aggnce2022.pdf" target="_blank">AggNCE: Asymptotically Identifiable Contrastive Learning.</a> <span style="color:#E55B5B;">(Oral, Top 5.6%)</span><br>
+Jingyi Cui*, <b>Weiran Huang</b>*, Yifei Wang, Yisen Wang.<br>
+NeurIPS 2022 Workshop on Self-Supervised Learning Theory and Practice (<tt>NeurIPS Workshop</tt>), 2022. <br>
+
+[<a href="https://slideslive.com/38996434?slide=88" target="_blank" rel="nofollow">video</a>]
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="publications/vem2022.pdf" target="_blank">Variational Energy-Based Models: A Probabilistic Framework for Contrastive Self-Supervised Learning.</a><br>
+Tianqi Du*, Yifei Wang*, <b>Weiran Huang</b>, Yisen Wang.<br>
+NeurIPS 2022 Workshop on Self-Supervised Learning Theory and Practice (<tt>NeurIPS Workshop</tt>), 2022.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/2103.03568" target="_blank" rel="nofollow">Can Pretext-Based Self-Supervised Learning Be Boosted by Downstream Data? A Theoretical Analysis.</a><br>
+Jiaye Teng*, <b>Weiran Huang</b>*†, Haowei He*.<br>
+International Conference on Artificial Intelligence and Statistics (<tt>AISTATS</tt>), 2022.<br>
+[<a href="talks/pretextssl2022slides.pdf" target="_blank">slides</a>] [<a href="publications/poster/pretextssl2022poster.pdf" target="_blank">poster</a>] [<a href="https://slideslive.com/38980545" target="_blank" rel="nofollow">video</a>] [<a href="https://zhuanlan.zhihu.com/p/356029195" target="_blank" rel="nofollow"><span class="cn">知乎</span></a>] [<a href="https://www.bilibili.com/video/BV1vM4y1M7Eo/" target="_blank" rel="nofollow">B <span class="cn">站</span></a>]
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/2006.00701" target="_blank" rel="nofollow">Locally Differentially Private (Contextual) Bandits Learning.</a><br>
+Kai Zheng, Tianle Cai, <b>Weiran Huang</b>, Zhenguo Li, Liwei Wang.<br>
+Conference on Neural Information Processing Systems (<tt>NeurIPS</tt>), 2020.<br>
+[<a href="https://github.com/huang-research-group/LDPbandit2020" target="_blank" rel="nofollow">code</a>] [<a href="https://slideslive.com/38936286" target="_blank" rel="nofollow">video</a>] [<a href="https://zhuanlan.zhihu.com/p/345512440" target="_blank" rel="nofollow"><span class="cn">知乎</span></a>]
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/2005.13826" target="_blank" rel="nofollow">Boosting Few-Shot Learning with Adaptive Margin Loss.</a><br>
+Aoxue Li, <b>Weiran Huang</b>, Xu Lan, Jiashi Feng, Zhenguo Li, Liwei Wang.<br>
+IEEE/CVF Conference on Computer Vision and Pattern Recognition (<tt>CVPR</tt>), 2020.<br>
+[<a href="talks/traml2020slides.pdf" target="_blank">slides</a>] [<a href="https://patentscope2.wipo.int/search/en/detail.jsf?docId=WO2021238281" target="_blank" rel="nofollow">patent</a>] [<a href="https://zhuanlan.zhihu.com/p/144538053" target="_blank" rel="nofollow"><span class="cn">知乎</span></a>]
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/1912.11252" target="_blank" rel="nofollow">Meta-Learning Pac-Bayes Priors in Model Averaging.</a><br>
+Yimin Huang, <b>Weiran Huang</b>, Liang Li, Zhenguo Li.<br>
+AAAI Conference on Artificial Intelligence (<tt>AAAI</tt>), 2020.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/2006.09104" target="_blank" rel="nofollow">New Interpretations of Normalization Methods in Deep Learning.</a><br>
+Jiacheng Sun, Xiangyong Cao, Hanwen Liang, <b>Weiran Huang</b>, Zewei Chen, Zhenguo Li.<br>
+AAAI Conference on Artificial Intelligence (<tt>AAAI</tt>), 2020.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/1908.05257" target="_blank" rel="nofollow">Few-Shot Learning with Global Class Representations.</a><br>
+Aoxue Li, Tiange Luo, Tao Xiang, <b>Weiran Huang</b>, Liwei Wang.<br>
+International Conference on Computer Vision (<tt>ICCV</tt>), 2019.<br>
+[<a href="https://github.com/huang-research-group/globalfsl2019" target="_blank" rel="nofollow">code</a>] [<a href="publications/poster/globalfsl2019poster.pdf" target="_blank">poster</a>] [<a href="https://patentscope2.wipo.int/search/en/detail.jsf?docId=WO2021013095" target="_blank" rel="nofollow">patent</a>] [<a href="https://zhuanlan.zhihu.com/p/78743300" target="_blank" rel="nofollow"><span class="cn">知乎</span></a>]
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/1811.05121" target="_blank" rel="nofollow">Modeling Local Dependence in Natural Language With Multi-Channel Recurrent Neural Networks.</a> <span style="color:#E55B5B;">(Oral)</span><br>
+Chang Xu, <b>Weiran Huang</b>, Hongwei Wang, Gang Wang, Tie-Yan Liu.<br>
+AAAI Conference on Artificial Intelligence (<tt>AAAI</tt>), 2019. 
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/1811.05134" target="_blank" rel="nofollow">Community Exploration: From Offline Optimization to Online Learning.</a><br>
+Xiaowei Chen, <b>Weiran Huang</b>, Wei Chen, John C.S.&nbsp;Lui.<br>
+Conference on Neural Information Processing Systems (<tt>NeurIPS</tt>), 2018.<br>
+[<a href="publications/poster/community2018poster.pdf" target="_blank">poster</a>]
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/1802.04189" target="_blank" rel="nofollow">Multi-Round Influence Maximization.</a> <span style="color:#E55B5B;">(Oral, Top 10.9%)</span><br>
+Lichao Sun, <b>Weiran Huang</b>, Philip S.&nbsp;Yu, Wei Chen.<br>
+ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<tt>KDD</tt>), 2018. <br>
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/1805.01685" target="_blank" rel="nofollow">Combinatorial Pure Exploration With Continuous and Separable Reward Functions and Its Applications.</a><br>
+<b>Weiran Huang</b>, Jungseul Ok, Liang Li, Wei Chen.<br>
+International Joint Conference on Artificial Intelligence (<tt>IJCAI</tt>), 2018.<br>
+[<a href="talks/cpecs2018slides.pdf" target="_blank">slides</a>]
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/1510.05217" target="_blank" rel="nofollow">Partitioned Sampling of Public Opinions Based on Their Social Dynamics.</a><br>
+<b>Weiran Huang</b>, Liang Li, Wei Chen.<br>
+AAAI Conference on Artificial Intelligence (<tt>AAAI</tt>), 2017.<br>
+[<a href="publications/poster/partition2017poster.pdf" target="_blank">poster</a>]
+</p>
+</li>
+</ul>
+<h2>Preprints and Manuscripts</h2>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/2309.17281" target="_blank" rel="nofollow">Information Flow in Self-Supervised Learning.</a><br>
+Zhiquan Tan, Jingqin Yang, <b>Weiran Huang</b>, Yang Yuan, Yifan Zhang.<br>
+[<a href="https://github.com/yifanzhang-pro/m-mae" target="_blank" rel="nofollow">code</a>]
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/2308.12067" target="_blank" rel="nofollow">InstructionGPT-4: A 200-Instruction Paradigm for Fine-Tuning MiniGPT-4.</a><br>
+Lai Wei, Zihao Jiang, <b>Weiran Huang</b>†, Lichao Sun.<br>
+[<a href="https://huggingface.co/datasets/WaltonFuture/InstructionGPT-4" target="_blank" rel="nofollow">200 selected data</a>] [<a href="https://mp.weixin.qq.com/s/s4Acec71v5oMlFkyhlCL_g" target="_blank" rel="nofollow"><span class="cn">机器之心</span></a>]
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/2307.04114" target="_blank" rel="nofollow">FILM: How can Few-Shot Image Classification Benefit from Pre-Trained Language Models?</a><br>
+Zihao Jiang*, Yunkai Dang*, Dong Pang, Huishuai Zhang, <b>Weiran Huang</b>†.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/pdf/1909.06035" target="_blank" rel="nofollow">DARTS+: Improved Differentiable Architecture Search With Early Stopping.</a><br>
+Hanwen Liang, Shifeng Zhang, Jiacheng Sun, Xingqiu He, <b>Weiran Huang</b>, Kechen Zhuang, Zhenguo Li.<br>
+[<a href="https://zhuanlan.zhihu.com/p/81459942" target="_blank" rel="nofollow"><span class="cn">知乎</span></a>]</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2024-01-07.
+<a href="/sitemap.xml" target="_blank">Site Map</a>.
+<a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow"><span class="cn">沪</span>ICP<span class="cn">备</span>20020427<span class="cn">号</span>-1</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<!-- 百度统计 -->
+<script>
+	var _hmt = _hmt || [];
+	(function () {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?3af8fb76fc9f2ca7fe57cf333ceb3341";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+<!-- microsoft clarity -->
+<script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "f8sbyee5cu");
+</script>
+<!-- mathjax config begin
+<script>
+	MathJax = {
+		tex: {
+			inlineMath: [['$', '$'], ['\\(', '\\)']]
+		}
+	};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+ mathjax config end-->
+</body>
+</html>

@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /assets/favicon
+Disallow: /assets/images
+Disallow: /awards
+Allow: /assets/images/profile.jpg
+
+Sitemap: https://www.weiranhuang.com/sitemap.xml
